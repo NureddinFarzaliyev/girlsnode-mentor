@@ -1,10 +1,12 @@
 // a və b adlı dəyişənlər yaradın. Bu dəyişənlərə istənilən ədədi qiymət təyin edin.
+const a = 27
 
 // Bu dəyişənlərin cəmini, fərqini, hasilini və bölməsini hesablayıb yeni dəyişənlərdə saxlayın.
 
 // Bu dəyişənlərin qiymətlərini konsola çap edin.
 
 // a dəyişəninin 3-cü qüvvətini hesablayıb konsola çap edin.
+console.log(a ** (1 / 3))
 
 // b dəyişəninin a dəyişəninə bölünməsindən alınan qalığı hesablayıb konsola çap edin.
 

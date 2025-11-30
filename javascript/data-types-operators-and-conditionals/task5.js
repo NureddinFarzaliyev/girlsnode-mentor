@@ -1,6 +1,30 @@
 // n dəyişəninə təyin edilmiş ədədin tək və ya cüt olduğunu yoxlayan proqram yazın
 
+let a = 10;
+
+if (a % 2 == 0) {
+    console.log("even");
+} else {
+    console.log("odd")
+}
+
+if (a > 10) {
+    console.log("a is greater than 10")
+} else if (a < 10)  {
+    console.log("a is less than 10")
+} else {
+    console.log("a is equal to 10")
+}
+
 // n dəyişəninin müsbət, mənfi və ya sıfır olduğunu yoxlayan proqram yazın
+
+if (n > 0) {
+    console.log("+");
+} else if (n < 0) {
+    console.log("-")
+} else {
+    console.log("0")
+}
 
 // n və m ədədlərindən böyük olanı çap edən proqramı yazın. Əgər bərabərdirsə, "Bərabərdir" mesajını çap etsin
 
