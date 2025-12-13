@@ -43,7 +43,17 @@ const students = [
 
 // Şagirdlərin adlarını və riyaziyyat ballarını bu bala əsasən çoxdan aza sıralamaqla çap edin
 
+const sortedStudents = students.sort((st1, st2) => st2.grades.math - st1.grades.math)
+sortedStudents.forEach((student) => {
+  // console.log(student.name, student.grades.math)
+})
+
 // Şagirdlərin adlarını və adlarındakı hərf sayını əlifba sırası ilə çap edin
+
+const sortedStudents2 = students.sort((a, b) => a.name.localeCompare(b.name))
+sortedStudents2.forEach((st) => {
+  // console.log(st.name, st.name.length)
+})
 
 // Riyaziyyatdan nəticəsi 85-dən yuxarı olan şagirdlərin adını əlifba sırası ilə çap edin
 
@@ -55,6 +65,16 @@ const students = [
 
 // 1 şagirdin ortalamasını aşağıdakı formada konsola loq edən funksiya yazın
 // "Alinin ortalaması 65-dir."
+
+const findAvg = (student) => {
+  const grades = Object.values(student.grades)
+  const sum = grades.reduce((acc, el) => {
+    return acc + el
+  }, 0)
+  console.log(sum/grades.length)
+}
+
+students.forEach(findAvg)
 
 // Ortalama funksiyasını forEach dövrü daxilində bütün şagirdlər üçün təkrar edin
 
