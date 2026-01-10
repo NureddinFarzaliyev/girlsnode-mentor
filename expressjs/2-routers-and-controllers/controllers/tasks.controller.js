@@ -6,7 +6,7 @@ const getAllTasks = (req, res) => {
 
 const getTaskById = (req, res) => {
   const taskId = parseInt(req.params.id, 10);
-  const task = demoTasks.find((t) => t.id === taskId);
+  const task = demoTasks.find((t) => t.id == taskId);
   if (task) {
     res.json(task);
   } else {
