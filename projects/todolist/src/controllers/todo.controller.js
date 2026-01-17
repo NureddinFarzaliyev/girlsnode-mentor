@@ -11,7 +11,7 @@ const getTodos = async (req, res) => {
 
 const getTodo = async (req, res) => {
   try {
-    const todo = await Todo.findOne({ _id: req.params.id });
+    const todo = await Todo.findOne({ _id: req.params.id }); // todos/7
     if (!todo) {
       return res.status(404).json({ error: "Item not found" });
     }

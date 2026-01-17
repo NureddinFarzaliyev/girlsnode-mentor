@@ -9,8 +9,8 @@ const {
 
 const todoRouter = express.Router();
 
-todoRouter.get("/", getTodos);
-todoRouter.get("/:id", getTodo);
+todoRouter.get("/", getTodos); // GET /todos
+todoRouter.get("/:id", getTodo); // GET /todos/2
 todoRouter.put("/:id", updateTodo);
 todoRouter.post("/", createTodo);
 todoRouter.delete("/:id", deleteTodo);
